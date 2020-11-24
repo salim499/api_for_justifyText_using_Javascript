@@ -23,7 +23,7 @@ server.post(
 server.post("/api/token", model.getTokenFromApi);
 
 // define port of server
-let port = 5000;
+let port = process.env.PORT  || 5000;
 
 // getting start the server
 server.listen(port, () => {
