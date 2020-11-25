@@ -29,6 +29,12 @@ the link to authentification :
 the link to justify the text : 
 [ https://justfytextapi.herokuapp.com/api/justify]( https://justfytextapi.herokuapp.com/api/justify " https://justfytextapi.herokuapp.com/api/justify, ").
 
+### deployment #
+
+I used heroku for mu deployement [ https://www.heroku.com/]( https://www.heroku.com/ " https://www.heroku.com/, "), to use eat you have to have heroku cli in your computer.
+
+You have to spicify to heroku the way with he should run your application and for that you have tu use Procfile file.
+
 ### demonstration #
 clique in the url to get and see my video of demonstartion
 [ https://ufile.io/av7ttbb1]( https://ufile.io/av7ttbb1 " https://ufile.io/av7ttbb1, ").
