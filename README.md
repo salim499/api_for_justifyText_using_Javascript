@@ -10,11 +10,11 @@ for more informations about POSTMAN [https://www.postman.com/](https://www.postm
 
 ### how does this api work  ? #
 
-first the user must register, and for that he must send a nickname or an email address in a json body object for example: {"email": "name@firebase.fr"} to  ###https://justfytextapi.herokuapp.com/api/token# in our case.
+first the user must register, and for that he must send a nickname or an email address in a json body object for example: {"email": "name@firebase.fr"} to  https://justfytextapi.herokuapp.com/api/token in our case.
 
 once the user sends his nickname he will receive a jwt token in json format.
 
-after that the user can send a text to justify it in to ###https://justfytextapi.herokuapp.com/api/token#, but for that he must include the token in the header, once he post the text, he get back the result as justify text.
+after that the user can send a text to justify it in to https://justfytextapi.herokuapp.com/api/token, but for that he must include the token in the header, once he post the text, he get back the result as justify text.
 
 ### rules of our api #
 
