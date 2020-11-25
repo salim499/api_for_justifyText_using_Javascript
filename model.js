@@ -44,23 +44,29 @@ exports.getText = (req, res, next) => {
 };
 // send a token from a user after that he send his email
 exports.getTokenFromApi = (req, res) => {
+    email=req.body.email
     // create a token
-    jwt.sign(
-        { user: req.rawBody },
-        "SecretKeyToto",
-        { expiresIn: "360000000s" },
-        (err, token) => {
-            // add the user to table contains all users of our api 
-            TokensTimersNbrWrds.push({
-                token: token,
-                date: new Date(),
-                nbrWords: 0,
-            });
-            //send the token to the user in json format
-            res.setHeader("Content-Type", "application/json");
-            res.json({ token: token });
-        }
-    );
+    if(typeof email !== 'undefined'){
+        jwt.sign(
+            { user: email },
+            "SecretKeyToto",
+            { expiresIn: "360000000s" },
+            (err, token) => {
+                // add the user to table contains all users of our api 
+                TokensTimersNbrWrds.push({
+                    token: token,
+                    date: new Date(),
+                    nbrWords: 0,
+                });
+                //send the token to the user in json format
+                res.setHeader("Content-Type", "application/json");
+                res.json({ token: token });
+            }
+        );
+    } else {
+        res.sendStatus(401)
+    }
+
 };
 // verify authentification and the validity of the token
 exports.verifyTokenValidity = (req, res, next) => {
