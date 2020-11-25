@@ -1,4 +1,4 @@
-# justifyText_using_Javascript
+# justifyText_using_Javascript_api
 
 This project consists in creating a rest API with nodeJs which allows users to justify a text past in body of request to the server without using particular libraries.
 
