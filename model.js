@@ -19,7 +19,7 @@ function justifyText(text) {
 
     paragraphs.forEach((paragraph) => {
         let begin = 0;
-        let end = 79;
+        let end = 80;
         let newParagraph = "";
         while (begin < paragraph.length) {
 
